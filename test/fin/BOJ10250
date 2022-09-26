@@ -1,0 +1,19 @@
+import Foundation
+
+
+let T = Int(readLine()!)!
+for _ in (0..<T) {
+    let HWN = readLine()!.split(separator: " ").map{Int(String($0))!}
+    // N % H : 0 에서 H - 1
+    // ((N - 1) % H ) + 1: 1 에서 H
+    let X = (HWN[2]-1) / HWN[0] + 1
+    let Y = (HWN[2]-1) % HWN[0] + 1
+    
+    let result = X / 10 > 0 ? "\(Y)\(X)": "\(Y)0\(X)"
+    
+    print(result)
+}
+
+문제의 핵심
+1. 나머지가 0 이 되는 경우의 수를 생각해서 미리 1을 뺴주고 마지막에 1을 더해주는 식으로 했다.
+    추가 : 빌딩은 6층이면 6XX 까지 올라가므로 나머지가 꽉차는 경우도 생각해야한다.

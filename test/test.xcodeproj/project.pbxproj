@@ -26,6 +26,8 @@
 		0412668E28DE154500C027D5 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		0412669128DE154500C027D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		046EF88F28E078A8006A2ECF /* BOJ2775 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2775; sourceTree = "<group>"; };
+		046EF89128E0AE80006A2ECF /* Input.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Input.md; sourceTree = "<group>"; };
+		046EF89228E18416006A2ECF /* BOJ10250 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ10250; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		0412668528DE154500C027D5 = {
 			isa = PBXGroup;
 			children = (
+				046EF89028E0AE6E006A2ECF /* Doc */,
 				0412669828DE1D9E00C027D5 /* fin */,
 				0412669028DE154500C027D5 /* test */,
 				0412668F28DE154500C027D5 /* Products */,
@@ -68,8 +71,17 @@
 			isa = PBXGroup;
 			children = (
 				046EF88F28E078A8006A2ECF /* BOJ2775 */,
+				046EF89228E18416006A2ECF /* BOJ10250 */,
 			);
 			path = fin;
+			sourceTree = "<group>";
+		};
+		046EF89028E0AE6E006A2ECF /* Doc */ = {
+			isa = PBXGroup;
+			children = (
+				046EF89128E0AE80006A2ECF /* Input.md */,
+			);
+			path = Doc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
