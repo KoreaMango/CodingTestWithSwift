@@ -1,0 +1,17 @@
+import Foundation
+
+var input = Int(readLine()!)!
+var left = input
+var cnt = 1
+
+while (true){
+    if left == 1 {break}
+    
+    cnt += 1
+    if left % cnt == 0 {
+        left = left / cnt
+        print(cnt)
+        cnt = 1
+    }
+}
+
