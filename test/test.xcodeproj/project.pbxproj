@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0407E81028E5E03E0037FDCD /* BOJ25305 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ25305; sourceTree = "<group>"; };
 		0412668E28DE154500C027D5 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		0412669128DE154500C027D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		04241AE128E48FA20089308A /* BOJ11653 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ11653; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 				046EF89228E18416006A2ECF /* BOJ10250 */,
 				04E93DF028E2B65F00B579F3 /* BOJ1978 */,
 				04241AE128E48FA20089308A /* BOJ11653 */,
+				0407E81028E5E03E0037FDCD /* BOJ25305 */,
 			);
 			path = fin;
 			sourceTree = "<group>";

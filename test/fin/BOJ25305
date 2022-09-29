@@ -1,0 +1,8 @@
+import Foundation
+
+let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+var arr = readLine()!.split(separator: " ").map{Int(String($0))!}
+arr = arr.sorted {$0 > $1}
+let k = input[1]
+print(arr[k-1])
+
