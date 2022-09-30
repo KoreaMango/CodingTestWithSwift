@@ -1,0 +1,40 @@
+import Foundation
+
+func isPrime(num : Int) -> Bool{
+    
+    let sNum = Int(sqrt(Double(num)))
+    if num == 1 {return false}
+    if num == 2 {return true}
+    if sNum >= 2 {
+        for i in (2...sNum){
+            if num % i == 0 {
+                return false
+            }
+        }
+    }
+    return true
+}
+
+let M = Int(readLine()!)!
+let N = Int(readLine()!)!
+var sum = 0
+var result = 0
+
+for i in (M...N){
+    if isPrime(num: i){
+        if sum == 0 {result = i}
+        sum += i
+    }
+}
+
+if sum == 0 {
+    print("-1")
+} else {
+    print(sum)
+    print(result)
+}
+
+
+문제의 핵심
+1. isPrime에서 sqrt한 Num가 2보다 큰지 확인해야하는 부분.
+
