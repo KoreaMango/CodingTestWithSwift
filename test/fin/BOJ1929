@@ -1,0 +1,30 @@
+let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+let M = input[0]
+let N = input[1]
+
+var arr = Array(repeating: true, count: N+N)
+arr[0] = false
+arr[1] = false
+
+
+for i in (2...N){
+    var idx = i
+    
+    while (idx <= N){
+        if idx != i {
+            arr[idx] = false
+        }
+        idx += i
+        
+    }
+}
+
+for i in (M...N){
+    if arr[i] {
+        print(i)
+    }
+}
+
+문제의 핵심
+1. 에라토스테네스의 체를 아는게 중요함.
+2. isPrime을 안써도 되는 편안함.
