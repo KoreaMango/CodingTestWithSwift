@@ -32,6 +32,7 @@
 		046EF88F28E078A8006A2ECF /* BOJ2775 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2775; sourceTree = "<group>"; };
 		046EF89128E0AE80006A2ECF /* Input.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Input.md; sourceTree = "<group>"; };
 		046EF89228E18416006A2ECF /* BOJ10250 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ10250; sourceTree = "<group>"; };
+		0491BB6228E95D9400686009 /* Sort.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Sort.md; sourceTree = "<group>"; };
 		04E93DF028E2B65F00B579F3 /* BOJ1978 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ1978; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				046EF89128E0AE80006A2ECF /* Input.md */,
+				0491BB6228E95D9400686009 /* Sort.md */,
 			);
 			path = Doc;
 			sourceTree = "<group>";
