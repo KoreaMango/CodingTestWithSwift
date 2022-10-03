@@ -1,0 +1,32 @@
+import Foundation
+func isPrime(num : Int) -> Bool {
+    if num == 1 { return false }
+    if num == 2 { return true }
+    let miniNum = Int(sqrt(Double(num)))
+    if miniNum >= 2 {
+        for i in (2...miniNum){
+            if num % i == 0{
+                return false
+            }
+        }
+    }
+    return true
+}
+
+
+while (true){
+    let input = Int(readLine()!)!
+    if input == 0 {break}
+    var cnt = 0
+    let double = input * 2
+    for i in (input+1...double){
+        if isPrime(num: i){
+            cnt += 1
+        }
+    }
+    print(cnt)
+    
+}
+
+문제의 비결
+1. miniNum까지만 소수를 구하는게 포인트
