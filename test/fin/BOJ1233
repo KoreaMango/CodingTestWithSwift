@@ -1,0 +1,28 @@
+
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+
+var S1 = input[0]
+var S2 = input[1]
+var S3 = input[2]
+
+var maxN : Int = input.reduce(0,+)
+
+var arr = Array(repeating: 0, count: maxN + 1)
+
+for i in (1...S1){
+    for j in (1...S2){
+        for k in (1...S3){
+            arr[i+j+k] += 1
+        }
+    }
+}
+
+var result = 0
+var resultIdx = 0
+for (index, value) in arr.enumerated() {
+    if result < value {
+        result = value
+        resultIdx = index
+    }
+}
+print(resultIdx)
