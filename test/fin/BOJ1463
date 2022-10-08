@@ -1,0 +1,19 @@
+let N = Int(readLine()!)!
+
+var arr = Array(repeating: 0, count: 100)
+
+for x in (2...N){
+    arr[x] = arr[x - 1] + 1
+    
+    if x % 3 == 0 {
+        arr[x] = min(arr[x / 3] + 1, arr[x])
+    }
+    else if x % 2 == 0 {
+        arr[x] = min(arr[x / 2] + 1, arr[x])
+    }
+}
+
+print(arr[N])
+
+문제 요점
+1. DP 문제는 점화식을 먼저 파악하는게 중요하다.
