@@ -1,0 +1,19 @@
+let input = Int(readLine()!)!
+var result = 0
+
+for i in (1...input){
+    let N = String(i).map{Int(String($0))!}
+    var M = 0
+    var other = 0
+    for j in N {
+        other += j
+    }
+    M = i + other
+    if M == input{
+
+        result = i
+        break
+    }
+}
+print(result)
+
