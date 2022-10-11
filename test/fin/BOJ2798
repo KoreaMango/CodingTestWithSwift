@@ -1,0 +1,23 @@
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+let N = input[0]
+let M = input[1]
+let cards = readLine()!.split(separator: " ").map{Int($0)!}
+var result = 0
+
+for i in (0 ..< N) {
+    for j in (1 ..< N){
+        if i == j {continue}
+        for k in (2 ..< N){
+            if j == k || i == k {continue}
+            let tmp = cards[i] + cards[j] + cards[k]
+            if M >= tmp {
+                if tmp >= result {
+                    result = tmp
+                }
+            }
+        }
+    }
+}
+
+print(result)
+
