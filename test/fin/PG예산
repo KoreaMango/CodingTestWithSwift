@@ -1,0 +1,15 @@
+import Foundation
+
+func solution(_ d:[Int], _ budget:Int) -> Int {
+    var budget = budget
+    
+    return d.sorted().filter{
+        budget = budget - $0
+        
+        return budget >= 0
+    }.count
+}
+
+문제 핵심
+1. 필터는 true인 경우만 배열에 담아서 다음 스트림으로 내보냄
+
