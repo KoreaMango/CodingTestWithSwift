@@ -33,6 +33,7 @@
 		04241AE128E48FA20089308A /* BOJ11653 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ11653; sourceTree = "<group>"; };
 		043C74BE28F7F2D80029CE49 /* PG예산 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG예산"; sourceTree = "<group>"; };
 		043C74BF28F80F7D0029CE49 /* PG영어끝말잇기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG영어끝말잇기"; sourceTree = "<group>"; };
+		045E224528F8F5FF00C1F3E0 /* PG점프와순간이동 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG점프와순간이동"; sourceTree = "<group>"; };
 		046EF88F28E078A8006A2ECF /* BOJ2775 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2775; sourceTree = "<group>"; };
 		046EF89128E0AE80006A2ECF /* Input.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Input.md; sourceTree = "<group>"; };
 		046EF89228E18416006A2ECF /* BOJ10250 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ10250; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 				04E032A228F55DD200EF354B /* BOJ2798 */,
 				043C74BE28F7F2D80029CE49 /* PG예산 */,
 				043C74BF28F80F7D0029CE49 /* PG영어끝말잇기 */,
+				045E224528F8F5FF00C1F3E0 /* PG점프와순간이동 */,
 			);
 			path = fin;
 			sourceTree = "<group>";
