@@ -1,0 +1,24 @@
+
+import Foundation
+
+func solution(_ a:[Int], _ b:[Int]) -> Int {
+    var answer: Int = 0
+    var aTeam: [Int] = a
+    var bTeam: [Int] = b
+    let count = a.count
+    aTeam.sort(by: >)
+    bTeam.sort(by: >)
+
+    var j = 0
+    for i in 0..<count{
+        if bTeam[j] > aTeam[i]{
+            j += 1
+            answer += 1
+        }
+    }
+    return answer
+}
+
+문제의 핵심
+1. 많이 이겨야하므로 강한놈이 강한놈부터 차례로 끊어가는게 가장 많이 이길 수 있다.
+2. 그러므로 정렬을 통해서 큰 수를 앞으로 오게 하고, b팀의 숫자가 a의 가장 큰 수부터 차례로 비교해가며 이기면 다음 b차례에게 넘긴다.
