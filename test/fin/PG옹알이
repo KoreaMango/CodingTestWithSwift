@@ -1,0 +1,32 @@
+import Foundation
+func solution(_ babbling:[String]) -> Int {
+    let can : [String] = ["aya", "ye", "woo", "ma"]
+    var componentCnt = 0
+    var answer = 0
+    var pre = "nil"
+    var flag = true
+    
+    for i in babbling {
+        componentCnt = 0
+        for j in can {
+            let comp = i.components(separatedBy: j)
+            flag = true
+            for k in comp {
+                if pre == k && comp.count > 2{
+                    flag = false
+                }
+                pre = k
+            }
+            if flag {
+                componentCnt += (comp.count - 1 ) * j.count
+            }
+
+        }
+        if componentCnt == i.count {
+            answer += 1
+        }
+       
+    }
+    return answer
+}
+
