@@ -1,22 +1,17 @@
 import Foundation
 
 func solution(_ n:Int, _ stations:[Int], _ w:Int) -> Int{
-    var answer = 0
-    var start = 1
-    
-    // 1...lastStation
-    for station in stations {
-        // 기지국 개수 구해서 더하기
-        answer += Int(ceil((Double(station - w - start) / Double(2 * w + 1))))
+    var baseStationCount:Int = 0
+    var start:Int = 1
+    for station in stations + [n+w+1] {
+        let end = station-(w+1)
+        let emptyCount = Int(ceil(Double(end - start + 1)/Double(w*2+1)))
+        baseStationCount += emptyCount > 0 ? emptyCount : 0
         start = station + w + 1
     }
-    // lastStation...lastApartment
-    if start <= n {
-        answer += Int(ceil((Double(n - start + 1) / Double(2 * w + 1))))
-    }
-
-    return answer
+    return baseStationCount
 }
 
-문제 핵심
-1. for문으로 한번에 다하려고 했었는데 그냥 stations 설치된거 마지막 까지 하고 N보다 작으면 마지막 설치국에서 끝까지 구해서 하면 되는거 였다.
+문제 요약
+1. for 마지막 부분에 종료되는 지점이, 다음 기지국의 영향권 전이라고 가정하고 풀이를 한다.
+
