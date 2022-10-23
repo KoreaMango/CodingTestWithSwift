@@ -1,0 +1,46 @@
+import Foundation
+func solution(_ N:Int, _ road:[[Int]], _ k:Int) -> Int {
+//마을이 하나라면 자기 자신밖에 안되므로 1을 반환
+    if N == 1 { return 1 }
+var allDistances = Array(repeating: Int.max, count: N+1)
+//시작값으 1으로 다익스트라 시작
+    dijkstra(allDistances: &allDistances ,road:road,start:1,n:N)
+//배달할 수 있는 마을의 갯수를 반환
+    return findEnableDelivery(n: N, allDistances: allDistances, k: k)
+}
+//k보다 작거나 같은 마을을 반환함.
+func findEnableDelivery(n:Int,allDistances:[Int],k:Int) -> Int {
+return allDistances.filter{$0 <= k}.count
+}
+//다익스트라로 시작 정점에서 가장 가까운 거리로 업데이트해줌.
+func dijkstra(allDistances:inout [Int],road:[[Int]],start:Int,n:Int) {
+//자기 자신과의 거리는 0
+    allDistances[start] = 0
+//시작 인덱스를 담은 큐를 만들어줌.
+    var queue:[Int] = [start]
+//큐가 모두 없어질때까지 반복
+    while !queue.isEmpty {
+//큐의 가장 첫번째 값을 저장하면서 삭제해줌.
+        let first = queue.removeFirst()
+//road에서 가장 첫번째 값이 있는 것들로 필터링 해줌.
+        let filter = road.filter{$0[0] == first || $0[1] == first}
+//필터링한 것들을 순회
+        for f in filter {
+//첫번째 값이 아닌 것을 other로 설정
+            let other = f[0] == first ? f[1] : f[0]
+//만약 Int 최댓값이라면 continue
+            if allDistances[first] == Int.max {continue}
+//첫번째 값에 거리를 더한 것이 원래 있는 값보다 작다면
+            if allDistances[first]+f[2] < allDistances[other] {
+//첫번째 값에 거리를 더한 것으로 업데이트
+                allDistances[other] = allDistances[first]+f[2]
+//다른 인덱스를 큐에 넣어줌.
+                queue.append(other)
+            }
+        }
+    }
+}
+
+문제 해결
+1. 다익스트라 알고리즘으로 풀어야한다.
+2. 딱보면 가중치가 있는 그래프이다.
