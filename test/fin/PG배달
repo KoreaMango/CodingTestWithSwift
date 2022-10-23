@@ -44,3 +44,30 @@ func dijkstra(allDistances:inout [Int],road:[[Int]],start:Int,n:Int) {
 문제 해결
 1. 다익스트라 알고리즘으로 풀어야한다.
 2. 딱보면 가중치가 있는 그래프이다.
+3. 플로이드로 모든 노드의 최단경로를 구한다음 구하는 예제도 있었다.
+
+func solution(_ N:Int, _ road:[[Int]], _ k:Int) -> Int {
+    var distance = [[Int]](repeating: [Int](repeating: 99999999, count: N), count: N)
+
+    for i in 0..<N {
+        distance[i][i] = 0
+    }
+     
+    for i in road {
+        distance[i[0]-1][i[1]-1] = min(i[2], distance[i[0]-1][i[1]-1])
+        distance[i[1]-1][i[0]-1] = min(i[2], distance[i[1]-1][i[0]-1])
+    }
+
+    for k in 0..<N {
+        for i in 0..<N {
+            for j in 0..<N {
+                distance[i][j] = min(distance[i][j], distance[i][k] + distance[k][j])
+            }
+        }
+    }
+    
+    print(distance)
+
+    return distance.first!.filter{$0<=k}.count
+}
+
