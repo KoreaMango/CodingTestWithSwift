@@ -1,0 +1,6 @@
+let _ = Int(readLine()!)!
+let input2 = readLine()!.split(separator: " ").map{Int($0)!}
+let input3 = Int(readLine()!)!
+
+print(input2.filter{$0 == input3}.count)
+
