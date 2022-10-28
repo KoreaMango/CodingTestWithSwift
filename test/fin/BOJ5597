@@ -1,0 +1,14 @@
+var arr : [Int] = []
+
+for i in (1...28) {
+    arr.append(Int(readLine()!)!)
+}
+
+arr = (1...30).filter{!arr.contains($0)}
+
+arr.map { int in
+    print(int)
+}
+
+
+
