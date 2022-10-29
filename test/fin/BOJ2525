@@ -1,0 +1,17 @@
+let input = readLine()!.split(separator: " ").map{Int($0)!}
+var add = Int(readLine()!)!
+var hour = input[0]
+var min = input[1]
+
+min = min + add
+
+if min >= 60 {
+    hour += min / 60
+    min = min % 60
+}
+
+if hour >= 24 {
+    hour = hour - 24
+}
+
+print(hour, min)
