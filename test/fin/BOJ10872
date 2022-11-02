@@ -1,0 +1,11 @@
+let input = Int(readLine()!)!
+
+func recursion(input : Int) -> Int{
+    if input <= 1 {
+        return 1
+    }
+    return recursion(input: input - 1) * input
+}
+
+print(recursion(input: input))
+
