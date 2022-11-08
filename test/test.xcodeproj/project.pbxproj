@@ -32,6 +32,7 @@
 		0412669128DE154500C027D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0421F5A628E6E54400A77CAC /* BOJ2581 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2581; sourceTree = "<group>"; };
 		04241AE128E48FA20089308A /* BOJ11653 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ11653; sourceTree = "<group>"; };
+		04261FA7291A97BB002A11B0 /* BOJ3009 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ3009; sourceTree = "<group>"; };
 		042DA51D29116265006192B5 /* BOJ10926 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ10926; sourceTree = "<group>"; };
 		043C74BE28F7F2D80029CE49 /* PG예산 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG예산"; sourceTree = "<group>"; };
 		043C74BF28F80F7D0029CE49 /* PG영어끝말잇기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG영어끝말잇기"; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 				042DA51D29116265006192B5 /* BOJ10926 */,
 				0485BB782912A65E0063819D /* BOJ10872 */,
 				04D1CB252913C61D004A305D /* BOJ10870 */,
+				04261FA7291A97BB002A11B0 /* BOJ3009 */,
 			);
 			path = fin;
 			sourceTree = "<group>";
