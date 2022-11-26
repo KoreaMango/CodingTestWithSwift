@@ -1,0 +1,9 @@
+let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+
+let quest = [1,1,2,2,2,8]
+
+let result = (0...5).map{quest[$0] - input[$0] }
+
+for i in result {
+    print(i, terminator: " ")
+}
