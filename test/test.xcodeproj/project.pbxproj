@@ -36,6 +36,7 @@
 		042DA51D29116265006192B5 /* BOJ10926 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ10926; sourceTree = "<group>"; };
 		043C74BE28F7F2D80029CE49 /* PG예산 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG예산"; sourceTree = "<group>"; };
 		043C74BF28F80F7D0029CE49 /* PG영어끝말잇기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG영어끝말잇기"; sourceTree = "<group>"; };
+		0447D10329AF8B5A004C9ECD /* All.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = All.md; sourceTree = "<group>"; };
 		044D901F290D106300C6B986 /* BOJ2525 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2525; sourceTree = "<group>"; };
 		045E224528F8F5FF00C1F3E0 /* PG점프와순간이동 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG점프와순간이동"; sourceTree = "<group>"; };
 		045E224628F90C8700C1F3E0 /* PG스킬트리 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG스킬트리"; sourceTree = "<group>"; };
@@ -150,6 +151,7 @@
 				0491BB6228E95D9400686009 /* Sort.md */,
 				04D8D42D28EB572A00C8F32E /* For.md */,
 				040073C328EDD31A00F027CC /* HigherOrderFunction.md */,
+				0447D10329AF8B5A004C9ECD /* All.md */,
 			);
 			path = Doc;
 			sourceTree = "<group>";
