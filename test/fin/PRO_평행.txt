@@ -1,0 +1,13 @@
+import Foundation
+
+func slope(_ a: [Int], _ b: [Int]) -> Double {
+    return Double(a[0] - b[0]) / Double(a[1] - b[1])
+}
+
+func solution(_ dots:[[Int]]) -> Int {
+    if slope(dots[0], dots[1]) == slope(dots[2], dots[3]) { return 1 }
+    if slope(dots[0], dots[2]) == slope(dots[1], dots[3]) { return 1 }
+    if slope(dots[1], dots[2]) == slope(dots[0], dots[3]) { return 1 }
+    
+    return 0
+}
