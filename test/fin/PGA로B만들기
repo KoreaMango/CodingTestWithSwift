@@ -1,0 +1,8 @@
+import Foundation
+
+func solution(_ before:String, _ after:String) -> Int {
+    var bef = before.map{String($0)}.sorted()
+    var aft = after.map{String($0)}.sorted()
+    
+    return bef == aft && bef.count == aft.count ? 1 : 0
+}
