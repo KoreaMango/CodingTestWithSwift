@@ -1,0 +1,9 @@
+import Foundation
+
+func solution(_ bin1:String, _ bin2:String) -> String {
+    var one = Int(bin1, radix: 2)! // 이진수 -> 10진수 Int
+    var two = Int(bin2, radix: 2)!
+    var result = String( one + two , radix: 2) // 10진수 Int -> 이진수
+    
+    return result
+}
