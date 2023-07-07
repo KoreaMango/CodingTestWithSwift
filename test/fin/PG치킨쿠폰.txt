@@ -1,0 +1,20 @@
+import Foundation
+
+func solution(_ chicken:Int) -> Int {
+    
+    var service = 0
+    var coupon = 0
+    var nowChick = chicken
+    
+    while nowChick >= 0 {
+        if coupon == 10 {
+            coupon = 0
+            nowChick += 1
+            service += 1
+        }
+        coupon += 1
+        nowChick -= 1
+    }
+    
+    return service
+}
