@@ -32,6 +32,7 @@
 		0412669128DE154500C027D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0420762F2A5966EB008A32CC /* PG문자열밀기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG문자열밀기"; sourceTree = "<group>"; };
 		042076302A59882B008A32CC /* PG종이자르기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG종이자르기"; sourceTree = "<group>"; };
+		042076312A598F41008A32CC /* PG연속된수의합 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG연속된수의합"; sourceTree = "<group>"; };
 		0421F5A628E6E54400A77CAC /* BOJ2581 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2581; sourceTree = "<group>"; };
 		04241AE128E48FA20089308A /* BOJ11653 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ11653; sourceTree = "<group>"; };
 		04261FA7291A97BB002A11B0 /* BOJ3009 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ3009; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 				046D0D4B2A580D9E005BB368 /* PGk의개수.txt */,
 				0420762F2A5966EB008A32CC /* PG문자열밀기 */,
 				042076302A59882B008A32CC /* PG종이자르기 */,
+				042076312A598F41008A32CC /* PG연속된수의합 */,
 			);
 			path = fin;
 			sourceTree = "<group>";
