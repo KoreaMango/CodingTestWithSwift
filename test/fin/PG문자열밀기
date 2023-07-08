@@ -1,0 +1,16 @@
+import Foundation
+
+func solution(_ A:String, _ B:String) -> Int {
+    
+    var a = A.map{String($0)}
+    var b = B.map{String($0)}
+    var cnt = 0
+    
+    for i in (0...a.count) {
+        if a == b { return cnt }
+        a.insert(a.popLast()!, at: 0)
+        cnt += 1
+    }
+    
+    return -1
+}

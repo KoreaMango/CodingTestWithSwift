@@ -30,6 +30,7 @@
 		04081BD528E760C600378770 /* BOJ1929 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ1929; sourceTree = "<group>"; };
 		0412668E28DE154500C027D5 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		0412669128DE154500C027D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0420762F2A5966EB008A32CC /* PG문자열밀기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG문자열밀기"; sourceTree = "<group>"; };
 		0421F5A628E6E54400A77CAC /* BOJ2581 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2581; sourceTree = "<group>"; };
 		04241AE128E48FA20089308A /* BOJ11653 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ11653; sourceTree = "<group>"; };
 		04261FA7291A97BB002A11B0 /* BOJ3009 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ3009; sourceTree = "<group>"; };
@@ -150,6 +151,7 @@
 				046D0D492A57F8D3005BB368 /* PG이진수더하기.txt */,
 				046D0D4A2A580546005BB368 /* PGA로B만들기 */,
 				046D0D4B2A580D9E005BB368 /* PGk의개수.txt */,
+				0420762F2A5966EB008A32CC /* PG문자열밀기 */,
 			);
 			path = fin;
 			sourceTree = "<group>";
