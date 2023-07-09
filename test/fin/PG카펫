@@ -1,0 +1,26 @@
+import Foundation
+// 가로 > 세로
+func solution(_ brown:Int, _ yellow:Int) -> [Int] {
+    var x = 0
+    var y = 0
+    var needBrown = 0
+    var cnt = yellow
+    
+    while needBrown != brown {
+        // yellow의 x, y 돌려보기
+        x = cnt
+        y = Int(yellow / cnt)
+        if x * y == yellow {
+            needBrown = getBorder(x: x, y: y)
+        }
+        cnt -= 1
+    }
+    
+    return [x + 2, y + 2]
+}
+
+func getBorder(x: Int, y: Int) -> Int {
+    var bx = x * 2
+    var by = y * 2
+    return bx + by + 4
+}
