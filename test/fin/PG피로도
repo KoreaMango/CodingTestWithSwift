@@ -1,0 +1,26 @@
+import Foundation
+
+func solution(_ k:Int, _ dungeons:[[Int]]) -> Int {
+    
+    var visited: [Bool] = Array(repeating: false, count: dungeons.count)
+    var result = 0
+    
+    func dfs(_ pirodo: Int, _ count: Int) {
+        if result < count {
+            result = count
+        }
+        
+        for i in (0..<dungeons.count) {
+            if !visited[i] && dungeons[i][0] <= pirodo {
+                visited[i] = true
+                dfs(pirodo - dungeons[i][1], count + 1)
+                visited[i] = false
+            }
+        }
+    }
+    
+    dfs(k, 0)
+
+    return result
+}
+
