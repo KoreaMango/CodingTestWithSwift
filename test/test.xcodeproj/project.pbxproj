@@ -44,6 +44,7 @@
 		0447D10329AF8B5A004C9ECD /* All.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = All.md; sourceTree = "<group>"; };
 		044D901F290D106300C6B986 /* BOJ2525 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2525; sourceTree = "<group>"; };
 		0451B2822A5CEC4F00A5A207 /* PG피로도 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG피로도"; sourceTree = "<group>"; };
+		0451B2832A5DA32A00A5A207 /* DFS+BFS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DFS+BFS.md"; sourceTree = "<group>"; };
 		045E224528F8F5FF00C1F3E0 /* PG점프와순간이동 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG점프와순간이동"; sourceTree = "<group>"; };
 		045E224628F90C8700C1F3E0 /* PG스킬트리 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG스킬트리"; sourceTree = "<group>"; };
 		046D0D482A57EF2C005BB368 /* PG치킨쿠폰.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG치킨쿠폰.txt"; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 				04D8D42D28EB572A00C8F32E /* For.md */,
 				040073C328EDD31A00F027CC /* HigherOrderFunction.md */,
 				0447D10329AF8B5A004C9ECD /* All.md */,
+				0451B2832A5DA32A00A5A207 /* DFS+BFS.md */,
 			);
 			path = Doc;
 			sourceTree = "<group>";
