@@ -1,0 +1,16 @@
+import Foundation
+
+func solution(_ arr:[Int], _ query:[Int]) -> [Int] {
+    
+    var result: [Int] = arr
+    
+    for (index,value) in query.enumerated() {
+        if index % 2 == 0 {
+            result = Array(result[...value])
+        } else {
+            result = Array(result[value...])
+        }
+    }
+    
+    return result
+}
