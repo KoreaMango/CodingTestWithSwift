@@ -1,0 +1,23 @@
+import Foundation
+
+func solution(_ l:Int, _ r:Int) -> [Int] {
+    var result: [Int] = []
+    
+    for i in (l...r) {
+        var check = 0
+        for j in String(i).map({String($0)}) {
+            if j == "5" || j == "0" {
+                check += 1
+            }
+        }
+        if check == String(i).count {
+            result.append(i)
+        }
+    }
+    
+    if result.isEmpty {
+        result.append(-1)
+    }
+    
+    return result
+}

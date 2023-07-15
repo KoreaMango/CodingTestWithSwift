@@ -1,0 +1,9 @@
+import Foundation
+
+func solution(_ order:[String]) -> Int {
+    
+    var ame = order.filter{ $0.contains("americano") || $0.contains("any") }
+    var cafe = order.filter{ $0.contains("cafelatte")}
+    
+    return ame.count * 4500 + cafe.count * 5000
+}
