@@ -80,6 +80,7 @@
 		04E032A228F55DD200EF354B /* BOJ2798 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2798; sourceTree = "<group>"; };
 		04E93DF028E2B65F00B579F3 /* BOJ1978 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ1978; sourceTree = "<group>"; };
 		04F457902A62C7210044FF8C /* PG커피심부름 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG커피심부름"; sourceTree = "<group>"; };
+		04F457912A6599AB0044FF8C /* PG정사각형으로만들기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG정사각형으로만들기"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +172,7 @@
 				04A0BA432A60429600901135 /* PG배열조각하기 */,
 				04A0BA442A6171C800901135 /* PG배열만들기2 */,
 				04F457902A62C7210044FF8C /* PG커피심부름 */,
+				04F457912A6599AB0044FF8C /* PG정사각형으로만들기 */,
 			);
 			path = fin;
 			sourceTree = "<group>";
