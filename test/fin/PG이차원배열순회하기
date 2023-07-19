@@ -1,0 +1,14 @@
+import Foundation
+
+func solution(_ board:[[Int]], _ k:Int) -> Int {
+    var sum = 0
+    for (i,value) in board.enumerated() {
+        for (j,val) in value.enumerated() {
+            if i + j <= k {
+                sum += val
+            }
+        }
+    }
+    
+    return sum
+}
