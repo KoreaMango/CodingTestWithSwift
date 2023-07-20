@@ -1,0 +1,26 @@
+import Foundation
+
+func solution(_ rank:[Int], _ attendance:[Bool]) -> Int {
+    var arr = rank
+    var result: [Int] = []
+
+    for i in (0..<rank.count) {
+        if attendance[i] == false {
+            arr[i] = 101
+        }
+    }
+    
+    for j in (0..<rank.count) {
+        var min = (101, 0)
+        for (index, value) in arr.enumerated() {
+            if value < min.0 {
+                min.0 = value
+                min.1 = index
+            }
+        }
+        result.append(Int(min.1))
+        arr[min.1] = 101
+    }
+    
+    return result[0] * 10000 + result[1] * 100 + result[2]
+}
