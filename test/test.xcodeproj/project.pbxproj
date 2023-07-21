@@ -46,6 +46,7 @@
 		044D901F290D106300C6B986 /* BOJ2525 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2525; sourceTree = "<group>"; };
 		0451B2822A5CEC4F00A5A207 /* PG피로도 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG피로도"; sourceTree = "<group>"; };
 		0451B2832A5DA32A00A5A207 /* DFS+BFS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DFS+BFS.md"; sourceTree = "<group>"; };
+		04594ADB2A6AB6670026BE36 /* PG정수로나선형 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG정수로나선형"; sourceTree = "<group>"; };
 		045E224528F8F5FF00C1F3E0 /* PG점프와순간이동 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG점프와순간이동"; sourceTree = "<group>"; };
 		045E224628F90C8700C1F3E0 /* PG스킬트리 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG스킬트리"; sourceTree = "<group>"; };
 		046D0D482A57EF2C005BB368 /* PG치킨쿠폰.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG치킨쿠폰.txt"; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 				04BE1BC82A680B1A00E37CA7 /* PG이차원배열순회하기 */,
 				04BE1BC92A680EF300E37CA7 /* PG특별한이차원배열2 */,
 				04BE1BCA2A696F8100E37CA7 /* PG전국대회선발고사 */,
+				04594ADB2A6AB6670026BE36 /* PG정수로나선형 */,
 			);
 			path = fin;
 			sourceTree = "<group>";
