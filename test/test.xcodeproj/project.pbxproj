@@ -83,6 +83,7 @@
 		04E02F6829055355000D1D72 /* PG배달 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG배달"; sourceTree = "<group>"; };
 		04E032A228F55DD200EF354B /* BOJ2798 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2798; sourceTree = "<group>"; };
 		04E5AF652A6EC48B00F3306D /* PG0떼기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG0떼기"; sourceTree = "<group>"; };
+		04E5AF662A6EC60000F3306D /* PGqrcode */ = {isa = PBXFileReference; lastKnownFileType = text; path = PGqrcode; sourceTree = "<group>"; };
 		04E93DF028E2B65F00B579F3 /* BOJ1978 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ1978; sourceTree = "<group>"; };
 		04F457902A62C7210044FF8C /* PG커피심부름 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG커피심부름"; sourceTree = "<group>"; };
 		04F457912A6599AB0044FF8C /* PG정사각형으로만들기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG정사각형으로만들기"; sourceTree = "<group>"; };
@@ -183,6 +184,7 @@
 				04BE1BCA2A696F8100E37CA7 /* PG전국대회선발고사 */,
 				04594ADB2A6AB6670026BE36 /* PG정수로나선형 */,
 				04E5AF652A6EC48B00F3306D /* PG0떼기 */,
+				04E5AF662A6EC60000F3306D /* PGqrcode */,
 			);
 			path = fin;
 			sourceTree = "<group>";
