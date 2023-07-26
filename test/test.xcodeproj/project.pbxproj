@@ -80,6 +80,7 @@
 		04D8D42D28EB572A00C8F32E /* For.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = For.md; sourceTree = "<group>"; };
 		04D8D42E28EB5ABD00C8F32E /* BOJ9020 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ9020; sourceTree = "<group>"; };
 		04DAE8E329AE03E9006A5417 /* BOJ2960.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BOJ2960.md; sourceTree = "<group>"; };
+		04DD128C2A70DC1D007A8765 /* PG전력망을둘로나누기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG전력망을둘로나누기"; sourceTree = "<group>"; };
 		04E02F6829055355000D1D72 /* PG배달 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG배달"; sourceTree = "<group>"; };
 		04E032A228F55DD200EF354B /* BOJ2798 */ = {isa = PBXFileReference; lastKnownFileType = text; path = BOJ2798; sourceTree = "<group>"; };
 		04E5AF652A6EC48B00F3306D /* PG0떼기 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PG0떼기"; sourceTree = "<group>"; };
@@ -187,6 +188,7 @@
 				04E5AF652A6EC48B00F3306D /* PG0떼기 */,
 				04E5AF662A6EC60000F3306D /* PGqrcode */,
 				04E5AF672A7019C800F3306D /* PG문자열겹쳐쓰기 */,
+				04DD128C2A70DC1D007A8765 /* PG전력망을둘로나누기 */,
 			);
 			path = fin;
 			sourceTree = "<group>";

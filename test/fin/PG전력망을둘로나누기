@@ -1,0 +1,59 @@
+## DFS 도전(실패)
+import Foundation
+
+func solution(_ n:Int, _ wires:[[Int]]) -> Int {
+    var minValue = 101
+    
+    for wire in wires {
+        print("wire: ",wire, "dfs: ",dfs(start: wire[1], cnt: 1, tree: wires))
+    }
+    
+    return -1
+}
+
+func dfs(start: Int, cnt: Int, tree:[[Int]]) -> Int {
+    var result = cnt
+    
+    for i in tree {
+        if i[0] == start {
+            result += dfs(start: i[1], cnt: 1 , tree: tree)
+        }
+    }
+    
+    return result
+    
+}
+
+
+## 2차 도전 (성공)
+import Foundation
+
+func solution(_ n:Int, _ wires:[[Int]]) -> Int {
+    var minValue = 101
+    
+    for wire in wires {
+        var next = dfs(start: wire[1], cnt: 1, tree: wires, pre: wire[0])
+        var pre = n - next
+        
+        if minValue > abs(next-pre) {
+            minValue = abs(next-pre)
+        }
+    }
+    
+    return minValue
+}
+
+func dfs(start: Int, cnt: Int, tree:[[Int]], pre: Int) -> Int {
+    var result = cnt
+    
+    for i in tree {
+        if i[0] == start && i[1] != pre {
+            result += dfs(start: i[1], cnt: 1 , tree: tree, pre: i[0] )
+        }
+        else if i[1] == start && i[0] != pre {
+             result += dfs(start: i[0], cnt: 1 , tree: tree, pre: i[1] )
+        }
+    }
+    return result
+}
+
